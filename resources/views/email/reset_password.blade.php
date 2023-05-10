@@ -140,8 +140,8 @@ text="#FFFFFF">
 	font-family: sans-serif;" class="footer">
 	Please do not reply. The email box is not monitored. This is an automated email for notification purposes only. If you have any questions please contact us at {{$setting['email'] ?? ""}} .<br/>
 	Follow us <br>
-	<a href="{{$setting['facebook'] ?? ''}}"><img src="{{ asset('images/icons/fb.png') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
-	<a href="{{$setting['twitter'] ?? ''}}"><img src="{{ asset('images/icons/twitter.png') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
+	<a href="{{$setting['facebook'] ?? ''}}"><img src="{{ asset('images/icons/fb.jpg') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
+	<a href="{{$setting['twitter'] ?? ''}}"><img src="{{ asset('images/icons/twitter.jpg') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
 	<a href="{{$setting['instagram'] ?? ''}}"><img src="{{ asset('images/icons/instagram.png') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
 	<a href="{{$setting['linkedin'] ?? ''}}"><img src="{{ asset('images/icons/linkedin.png') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
 	<a href="{{$setting['whatsapp'] ?? ''}}"> <img src="{{ asset('images/icons/whatsapp.png') }}" alt="Facebook" style="width: 16px; height: 16px;"></a>
