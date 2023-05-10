@@ -41,7 +41,7 @@ class BlogController extends Controller
             $data = $req->except('_token');
             $count=null;
             $name = $count.time().'_'.str_replace(' ', '-', $req->image->getClientOriginalName());
-            $data['image']= $req->image->move('uploads/blogs/images',$name);
+            $data['image']= $req->image->move(public_path('uploads/blogs/images'),$name);
             //$image_path = uploadFile(, 'uploads/blogs/images', $count = null);
             //$data['image'] = $image_path;
             $slug = Str::slug($data['title'], '-');

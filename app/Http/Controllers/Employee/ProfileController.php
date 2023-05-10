@@ -82,7 +82,7 @@ class ProfileController extends Controller
         ]);
         $image=$request->avatar;
         $filename = 'uploads/users/'.time() . '.' . $image->getClientOriginalExtension();
-        $movedFile = $image->move('uploads/users/', $filename);
+        $movedFile = $image->move(public_path('uploads/users/'), $filename);
         User::where('id',auth()->user()->id)->update([
             'avatar'=>$filename,
         ]);

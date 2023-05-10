@@ -49,7 +49,7 @@ class CompanyController extends Controller
             ]);
             $image=$request->image;
             $avatar = 'uploads/company/'.time() . '.' . $image->getClientOriginalExtension();
-            $movedFile = $image->move('uploads/company/', $avatar);
+            $movedFile = $image->move(public_path('uploads/company/'), $avatar);
         }
         $user=User::create([
             'name'=>$request->name,
@@ -93,7 +93,7 @@ class CompanyController extends Controller
             ]);
             $image=$request->image;
             $avatar = 'uploads/users/'.time() . '.' . $image->getClientOriginalExtension();
-            $movedFile = $image->move('uploads/users/', $avatar);
+            $movedFile = $image->move(public_path('uploads/users/'), $avatar);
         }
         else
         {

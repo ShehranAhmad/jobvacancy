@@ -45,7 +45,7 @@ class EventController extends Controller
         $data = $request->except('_token');
         $count=null;
         $name = $count.time().'_'.str_replace(' ', '-', $request->image->getClientOriginalName());
-        $data['image']= $request->image->move('uploads/events/images',$name);
+        $data['image']= $request->image->move(public_path('uploads/events/images'),$name);
         $slug = Str::slug($data['title'], '-');
         $data['slug'] = $slug;
         $data['is_free']=true;
@@ -83,7 +83,7 @@ class EventController extends Controller
             ]);
             $count=null;
             $name = $count.time().'_'.str_replace(' ', '-', $request->image->getClientOriginalName());
-            $data['image']= $request->image->move('uploads/events/images',$name);
+            $data['image']= $request->image->move(public_path('uploads/events/images'),$name);
         }
         $slug = Str::slug($data['title'], '-');
         $data['slug'] = $slug;

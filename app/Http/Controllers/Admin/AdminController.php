@@ -55,7 +55,7 @@ class AdminController extends Controller
             ]);
             $image=$request->image;
             $filename = 'uploads/users/'.time() . '.' . $image->getClientOriginalExtension();
-            $movedFile = $image->move('uploads/users/', $filename);
+            $movedFile = $image->move(public_path('uploads/users/'), $filename);
             $user->avatar = $filename;
         }
         $user->save();

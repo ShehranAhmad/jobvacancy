@@ -5,13 +5,13 @@
 
 function uploadAvatar($file, $path){
     $name = time().'-'.str_replace(' ', '-', $file->getClientOriginalName());
-    $file->move($path,$name);
+    $file->move(public_path($path),$name);
     return $path.'/'.$name;
 }
 
 function uploadFile($file, $path = 'audios',$count){
     $name = $count.time().'_'.str_replace(' ', '-', $file->getClientOriginalName());
-    $file->move($path,$name);
+    $file->move(public_path($path),$name);
     return $path.'/'.$name;
 }
 

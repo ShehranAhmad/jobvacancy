@@ -33,7 +33,7 @@ class SettingController extends Controller
         ]);
         $image=$request->image;
         $avatar = 'uploads/logos/'.time() . '.' . $image->getClientOriginalExtension();
-        $movedFile = $image->move('uploads/logos/', $avatar);
+        $movedFile = $image->move(public_path('uploads/logos/'), $avatar);
         HiringCompany::create([
             'image'=>$avatar,
         ]);
@@ -73,7 +73,7 @@ class SettingController extends Controller
                     }
                     $image = $request->file($key);
                     $name = $image->getClientOriginalName();
-                    $image->move('uploads/cms/', $name);
+                    $image->move(public_path('uploads/cms/'), $name);
                     Setting::where('key', '=', $key)->update([
                         'value' => "uploads/cms/".$name
                     ]);
