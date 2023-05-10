@@ -76,6 +76,8 @@ Route::prefix('admin')->name('admin.')->middleware(['admin','auth'])->namespace(
 
     Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
     Route::get('/profile', 'AdminController@profile')->name('profile');
+    Route::post('profile-update','AdminController@updateProfile')->name('update.profile');
+
     Route::get('/inquiries', 'AdminController@inquiries')->name('inquiries');
     Route::get('/inquiry-detail/{id?}', 'AdminController@inquiriesDetail')->name('inquiries.detail');
     Route::get('/inquiry-close/{id?}', 'AdminController@inquiriesClose')->name('inquiries.close');
