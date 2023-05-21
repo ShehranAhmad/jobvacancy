@@ -52,7 +52,7 @@
                             </div>
                         </div><!--end col-->
                         <div class="col-lg-12 mt-2 text-center">
-                            <h6>Or Login With</h6>
+                            <h6>Or</h6>
                             <div class="row">
                                 <div class="col-12 ">
                                     <div class="d-grid">
@@ -60,6 +60,9 @@
                                     </div>
                                 </div><!--end col-->
                             </div>
+                        </div>
+                        <div class="mx-auto">
+                            <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="{{route('register')}}" class="text-dark fw-bold">Sign up</a></p>
                         </div>
                     </div><!--end row-->
                 </form>
