@@ -60,7 +60,7 @@
         <div class="row align-items-center">
             <div class="col-sm-12 col-12">
                 <div class="">
-                    <p class="mb-0">&copy; Copyright © <script>document.write(new Date().getFullYear())</script>  <i class="mdi mdi-heart text-danger"></i> by <a href="https://wa.me/+923217404880" target="_blank" class="text-reset">Shehran</a>. {{$setting['copyright']??""}}</p>
+                    <p class="mb-0"> Copyright &copy; <script>document.write(new Date().getFullYear())</script>  <i class="mdi mdi-heart text-danger"></i> <a href="https://wa.me/+923217404880" target="_blank" class="text-reset">Shehran</a>. {{$setting['copyright']??""}}</p>
                 </div>
             </div><!--end col-->
 
