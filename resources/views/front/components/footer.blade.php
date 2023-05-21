@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                 <a href="#" class="logo-footer">
-                    <img src="{{asset($setting['logo_footer']??"")}}" height="24" alt="">
+                    <img src="{{asset($setting['logo_footer']??"")}}"  alt="">
                 </a>
                 <p class="mt-4">{{$setting['footer_description']??""}}</p>
 
@@ -60,7 +60,7 @@
         <div class="row align-items-center">
             <div class="col-sm-12 col-12">
                 <div class="">
-                    <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> {{$setting['copyright']??""}} <i class="mdi mdi-heart text-danger"></i> by <a href="#" target="_blank" class="text-reset">Shehran</a>.</p>
+                    <p class="mb-0">&copy; Copyright © <script>document.write(new Date().getFullYear())</script>  <i class="mdi mdi-heart text-danger"></i> by <a href="https://wa.me/+923217404880" target="_blank" class="text-reset">Shehran</a>. {{$setting['copyright']??""}}</p>
                 </div>
             </div><!--end col-->
 

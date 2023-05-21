@@ -4,8 +4,8 @@
         <!-- Logo container-->
         <div>
             <a class="logo" href="{{route('index')}}">
-                <img src="{{asset($setting['logo']??"")}}" class="l-dark" height="24" alt="">
-                <img src="{{asset($setting['logo_footer']??"")}}" class="l-light" height="24" alt="">
+                <img src="{{asset($setting['logo']??"")}}" class="l-dark"  alt="">
+                <img src="{{asset($setting['logo_footer']??"")}}" class="l-light"  alt="">
             </a>
         </div>
         <ul class="buy-button list-inline mb-0">
